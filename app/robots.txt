@@ -1,0 +1,9 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /server/
+Disallow: /private/
+Disallow: /admin/
+
+Host: https://ar.rukunalaroobausedfurniture.ae
+Sitemap: https://ar.rukunalaroobausedfurniture.ae/sitemap.xml
