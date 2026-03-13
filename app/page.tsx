@@ -9,7 +9,7 @@ import HowItWorks from "@/components/HowItWorks";
 import RestorationProcess from "@/components/RestorationProcess";
 import ServiceAreas from "@/components/ServiceAreas";
 import Testimonials from "@/components/Testimonials";
-import FAQ, { faqs } from "@/components/FAQ";
+import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -17,6 +17,7 @@ import src from "@/public/ركن-العروبة-للأثاث-المستعمل-ف
 import Image from "next/image";
 import { generateFAQSchema } from "@/public/GenerateFaqSchema";
 import Script from "next/script";
+import { faqs } from "@/public/list";
 
 const faqSchema = generateFAQSchema(faqs);
 export default function Home() {
