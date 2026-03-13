@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans_Arabic } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
+import { RukunAlAroobaSchema } from "@/public/list";
 
 const ibmPlexArabic = IBM_Plex_Sans_Arabic({
   subsets: ["arabic", "latin"],
@@ -59,6 +61,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl" className={ibmPlexArabic.variable}>
+      <head>
+        <Script
+          id="Business-Schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(RukunAlAroobaSchema),
+          }}
+          strategy="beforeInteractive"
+          key="Business-Schema"
+        />
+      </head>
       <body
         className={`${ibmPlexArabic.className} bg-bg-primary text-text-primary antialiased`}
       >
